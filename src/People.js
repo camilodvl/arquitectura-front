@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import AllPeople from "./components/AllPeople";
+import InsertPeople from "./components/InsertPeople";
 
 
 function People() {
@@ -8,6 +9,7 @@ function People() {
     <BrowserRouter>
         <Routes>
         <Route path='/' element={<AllPeople/>}/>
+        <Route path='/people' element={<InsertPeople/>}/>
         </Routes>
       </BrowserRouter>
     </>
