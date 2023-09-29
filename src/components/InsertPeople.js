@@ -26,7 +26,7 @@ const InsertPeople = () => {
         onSubmit={(e) => handledSubmit(e)}
         className="m-3 border border-primary p-1 rounded border-opacity-25"
       >
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-around">
           <div className="form-group">
             <label>Nombre: </label>
             <input

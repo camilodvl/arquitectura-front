@@ -13,3 +13,10 @@ export const postPeople = async (data) => {
     });
     return resp;
   };
+
+  export const deletePeople = async (data) => {
+    const resp = await axiosInstance.delete("delete", {
+      data: { id: data },
+    });
+    return resp;
+  };
