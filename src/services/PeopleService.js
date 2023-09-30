@@ -20,3 +20,21 @@ export const postPeople = async (data) => {
     });
     return resp;
   };
+
+
+  export const updatePeople = async (data) => {
+    const resp = await axiosInstance.put("update", {
+      data: { id: data },
+    });
+    return resp;
+  };
+
+
+  export const getPeopleId = async (id) => {
+    const resp = await axiosInstance.get(`get/${id}`, {
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+    return resp;
+  };

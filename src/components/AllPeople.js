@@ -45,6 +45,15 @@ function AllPeople() {
                     Eliminar
                   </button>
                 </td>
+                <td>
+                  <NavLink
+                    to={`get/${people._id}`}
+                    className="btn btn-info"
+                  >
+                    Editar
+                  </NavLink>
+                </td>
+
               </tr>
             );
           })}
